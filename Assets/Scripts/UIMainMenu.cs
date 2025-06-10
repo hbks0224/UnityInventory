@@ -15,6 +15,7 @@ public class UIMainMenu : MonoBehaviour
 
     public Button StatusBtn;
     public Button InvenBtn;
+    public UIStatus Status;
 
     private void Start()
     {
@@ -29,6 +30,8 @@ public class UIMainMenu : MonoBehaviour
         UIManager.Instance.MainMenu.SetActive(true);
         UIManager.Instance.InventoryUI.SetActive(false);
         UIManager.Instance.StatusUI.SetActive(false);
+        GameManager.Instance.Player.CheckEquip();
+        Status.DisplayStat();
 
     }
 
@@ -38,6 +41,7 @@ public class UIMainMenu : MonoBehaviour
         UIManager.Instance.StatusUI.SetActive(true);
         UIManager.Instance.InventoryUI.SetActive(false);
         UIManager.Instance.MainMenu.SetActive(false);
+        
 
     }
 

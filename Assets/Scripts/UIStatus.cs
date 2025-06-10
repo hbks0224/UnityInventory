@@ -21,18 +21,18 @@ public class UIStatus : MonoBehaviour
     public void DisplayStat()
     {
 
-        Atk_Text.text = $"{GameManager.Instance.Player.Attack}";
-        Dfe_Text.text = $"{GameManager.Instance.Player.Defense}";
-        Health_Text.text = $"{GameManager.Instance.Player.Hp}";
-        Critical_Text.text = $"{GameManager.Instance.Player.Critical}";
+        Atk_Text.text = $"{GameManager.Instance.Player.tempAttack}";
+        Dfe_Text.text = $"{GameManager.Instance.Player.tempDefense}";
+        Health_Text.text = $"{GameManager.Instance.Player.tempHP}";
+        Critical_Text.text = $"{GameManager.Instance.Player.tempCritical}";
     }
 
-    public void DisplayStat(Character player)
-    {
+    //public void DisplayStat(Character player)
+    //{
 
-        Atk_Text.text = $"{player.Attack}";
-        Dfe_Text.text = $"{player.Defense}";
-        Health_Text.text = $"{player.Hp}";
-        Critical_Text.text = $"{player.Critical}";
-    }
+    //    Atk_Text.text = $"{player.Attack}";
+    //    Dfe_Text.text = $"{player.Defense}";
+    //    Health_Text.text = $"{player.Hp}";
+    //    Critical_Text.text = $"{player.Critical}";
+    //}
 }
